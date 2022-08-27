@@ -7,4 +7,4 @@ COPY . .
 RUN npm install
 
 ENTRYPOINT [ "npm" ]
-CMD [ "run", "dev" ]
+CMD [ "run", "start" ]
