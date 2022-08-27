@@ -20,6 +20,19 @@ If you plan to contribute to this list, please reach out to me and I can give yo
 
 ## Run it yourself
 
+## Setup AWS
+
+In order to use AWS Polly and Transcribe, you will need to do the following:
+
+1. Create a new AWS IAM user with access to the Polly and Transcribe services
+2. Add your access and secret access keys to the `.env.dev` file
+3. Create an S3 bucket and upload the `support/transcribe_vocab.txt` file to it with npm scripts
+   1. `npm i`
+   2. `npm run upload-s3-vocab`
+   3. `npm run create-vocab` (make sure to edit your `package.json` to point to your S3 bucket)
+
+These steps will at least get your S3 env setup so you can transcribe messages
+
 ### Commands
 
 You first need to !deploy the bot. Only the owner of the app can deploy it. It will try to auto-deploy if you have the guild id configured.
