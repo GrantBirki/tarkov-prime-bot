@@ -1,3 +1,10 @@
-FROM node:18
+FROM node:latest
 
-ENV NODE_ENV production
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+
+ENTRYPOINT [ "npm" ]
+CMD [ "run", "dev" ]

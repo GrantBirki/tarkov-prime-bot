@@ -1,0 +1,7 @@
+services:
+  bot:
+    container_name: bot
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./Dockerfile

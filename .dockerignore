@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vscode/
+fly.toml
+LICENSE
+README.md
